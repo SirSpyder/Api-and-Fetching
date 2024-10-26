@@ -1,0 +1,22 @@
+{
+  "ghostSightings": [
+    {
+      "id": 1,
+      "location": "old Temple",
+      "date": "2024-10-22",
+      "typeOfGhost": "Ghoul"
+    },
+    {
+      "id": 2,
+      "location": "Hanted Forest",
+      "date": "2024-10-21",
+      "typeOfGhost": "Oni"
+    },
+    {
+      "id": "c530",
+      "location": "GraveYard",
+      "date": "2024-10-01",
+      "typeOfGhost": "Ghast"
+    }
+  ]
+}

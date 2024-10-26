@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api and Fetching</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylessheet" href="styles.css">
+</head>
+<body class="bg-info-subtle">
+ <!--    Coding Steps:
+
+    Create a CRD application (CRUD without update) using json-server or another API
+    Use fetch and async/await to interact with the API
+    Use a form to create/post new entities
+    Build a way for users to delete entities
+    Include a way to get entities from the API and display them
+    You do NOT need update, but you can add it if you'd like
+    Use Bootstrap and/or CSS to style your project -->
+    
+    <h1 class="mb-4 text-center p-4">Ghost Sightings</h1>
+
+    <div class="text-center mt-3 ms-3">
+    <img class="img-thumbnail" src="https://imgix.bustle.com/uploads/image/2018/9/26/6fd482cc-5ed8-407c-85b8-6805b5f609a6-shutterstock_390525841.jpg?w=970&h=582&fit=crop&crop=faces&auto=format&q=70" alt="Ghost in Dark Forest">
+    </div>
+        
+    
+    <div class="container mt-5 bg-secondary-subtle fs-5 p-2">
+        <!--Im doing a json server for this one-->
+
+
+        <!--Need A Form to manage new entry-->
+
+        <form id="sighting-form">
+            <div class="form-group">
+              <label for="location">Location</label>
+              <input type="text" id="location" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="typeOfGhost">Type of Ghost</label>
+              <input type="text" id="typeOfGhost" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Sighting</button>
+          </form>
+          
+          <ul id="sighting-list" class="list-group mt-3"></ul>
+
+
+        <!--Show entry's-->
+        <h2>Sighting List</h2>
+        <ul id="entity-list" class="list-group"></ul>
+    </div>
+
+    <h2 class=" mb-4 text-center p-4">Thank you for your entry</h2>
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
